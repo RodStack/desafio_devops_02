@@ -28,6 +28,6 @@ jobs:
           --instance-type t2.micro \
           --key-name ${{ vars.MY_KEY }} \
           --security-group-ids ${{ vars.MY_SG }} \
-          --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=Desafio-Rod-02}]'
+          --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=Desafio-Rod-01}]'
 
 
