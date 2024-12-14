@@ -18,9 +18,9 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }} 
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} 
-          aws-region: us-west-2
+          aws-region: ${{ vars.MY_REGION }}
 
-      - name: Crear EC2 Instance
+      - name: Crear instancia EC2 
         run: |
           aws ec2 run-instances \
           --image-id ${{ vars.MY_AMI }} \
@@ -28,6 +28,6 @@ jobs:
           --instance-type t2.micro \
           --key-name ${{ vars.MY_KEY }} \
           --security-group-ids ${{ vars.MY_SG }} \
-          --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=Desafio-Rod-01}]'
+          --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=Desafio-Rod-02}]'
 
 
