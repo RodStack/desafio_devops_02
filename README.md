@@ -1,4 +1,4 @@
-# Proyecto de Infraestructura en AWS
+# Desafio DevOps Modulo 5 - 01
 
 En este proyecto cree una infraestructura en la nube con Amazon Web Services (AWS). Configurando una VPC (Virtual Private Cloud) con 4 subredes (2 públicas y 2 privadas), permitiendo un acceso controlado a Internet y asegurando que los recursos más sensibles estén protegidos.
 ## Pasos Realizados
